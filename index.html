@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="lt">
 <head>
     <title>VšĮ "Įvairi media"</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <div class="container">
-        <h1>VšĮ "Įvairi media"</h1>
-        <div >
-            Organizuojame kasmetine tarptautine <a href="https://pycon.lt" target="_blank">PyCon Lithuania</a> konferencija.
-        </div>
-        <div>
-            We organize annual international <a href="https://pycon.lt" target="_blank">PyCon Lithuania</a> conference.
-        </div>
-        <div class="info-section" id="lt-info">
-            <h2>LT</h2>
-            <div>Pavadinimas: VšĮ "Įvairi media"</div>
-            <div>Įmonės kodas: 302618824</div>
-            <div>El. paštas: <a href="mailto:info@ivairimedia.com">info@ivairimedia.com</a></div>
-            <div>Telefono numeris: +370 641 39571</div>
-            <div>PVM kodas: LT100016529313</div>
-            <button onclick="copyInfo('lt-info')">Kopijuoti informacija</button>
-        </div>
+<body class="font-sans bg-gray-100 text-gray-800">
+    <div class="container mx-auto max-w-screen-sm">
+        <header class="text-center my-8">
+            <h1 class="text-4xl font-bold mb-2">VšĮ "Įvairi media"</h1>
+            <p class="text-lg">Organizuojame kasmetinę tarptautinę <a href="https://pycon.lt" class="text-blue-500 hover:text-blue-700" target="_blank">PyCon Lithuania</a> konferenciją.</p>
+        </header>
 
-        <div class="info-section" id="en-info">
-            <h2>EN</h2>
-            <div>Name: VšĮ "Įvairi media"</div>
-            <div>Company code: 302618824</div>
-            <div>Email: <a href="mailto:info@ivairimedia.com">info@ivairimedia.com</a></div>
-            <div>Phone number: +370 641 39571</div>
-            <div>VAT code: LT100016529313</div>
-            <button onclick="copyInfo('en-info')">Copy info</button>
-        </div>
+        <section class="info-section bg-white p-6 rounded-lg shadow-md" id="info">
+            <h2 class="text-2xl font-semibold mb-4">Rekvizitai</h2>
+            <div class="mb-2">Pavadinimas: VšĮ "Įvairi media"</div>
+            <div class="mb-2">Įmonės kodas: 302618824</div>
+            <div class="mb-2">El. paštas: <a href="mailto:info@ivairimedia.com" class="text-blue-500 hover:text-blue-700">info@ivairimedia.com</a></div>
+            <div class="mb-2">Telefono numeris: +370 641 39571</div>
+            <div class="mb-4">PVM kodas: LT100016529313</div>
+            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="copyInfo('info')">Kopijuoti informacija</button>
+        </section>
     </div>
 
     <script src="script.js"></script>
